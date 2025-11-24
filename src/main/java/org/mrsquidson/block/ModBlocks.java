@@ -16,10 +16,10 @@ import org.mrsquidson.Moremoquettes;
 
 public class ModBlocks {
 
-    public static final RegistryKey<ItemGroup> BUILDING_BLOCKS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Moremoquettes.MOD_ID, "build_blocks"));
+    public static final RegistryKey<ItemGroup> BUILDING_BLOCKS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Moremoquettes.MOD_ID, "item_group"));
     public static final ItemGroup BUILDING_BLOCKS = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModBlocks.YELLOW_MOQUETTE))
-            .displayName(Text.translatable("buildGroup.Moremoquettes"))
+            .displayName(Text.translatable("buildGroup.Moquettes"))
             .build();
 
     public static final Block BLACK_MOQUETTE = registerBlock("black_moquette",
@@ -62,20 +62,23 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         Moremoquettes.LOGGER.info("Weaving carpets and making blocks for " + Moremoquettes.MOD_ID);
-    ItemGroupEvents.modifyEntriesEvent(ModBlocks.BUILDING_BLOCKS_KEY).register(itemGroup -> {
-        itemGroup.add(ModBlocks.BLACK_MOQUETTE);
-        itemGroup.add(ModBlocks.CYAN_MOQUETTE);
-        itemGroup.add(ModBlocks.GRAY_MOQUETTE);
-        itemGroup.add(ModBlocks.GREEN_MOQUETTE);
-        itemGroup.add(ModBlocks.LIGHT_BLUE_MOQUETTE);
-        itemGroup.add(ModBlocks.LIGHT_GRAY_MOQUETTE);
-        itemGroup.add(ModBlocks.LIME_MOQUETTE);
-        itemGroup.add(ModBlocks.MAGENTA_MOQUETTE);
-        itemGroup.add(ModBlocks.ORANGE_MOQUETTE);
-        itemGroup.add(ModBlocks.PINK_MOQUETTE);
-        itemGroup.add(ModBlocks.PURPLE_MOQUETTE);
-        itemGroup.add(ModBlocks.WHITE_MOQUETTE);
-        itemGroup.add(ModBlocks.YELLOW_MOQUETTE);
+
+        Registry.register(Registries.ITEM_GROUP, BUILDING_BLOCKS_KEY, BUILDING_BLOCKS);
+
+        ItemGroupEvents.modifyEntriesEvent(ModBlocks.BUILDING_BLOCKS_KEY).register(BUILDING_BLOCKS -> {
+            BUILDING_BLOCKS.add(ModBlocks.BLACK_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.CYAN_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.GRAY_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.GREEN_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.LIGHT_BLUE_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.LIGHT_GRAY_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.LIME_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.MAGENTA_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.ORANGE_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.PINK_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.PURPLE_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.WHITE_MOQUETTE);
+            BUILDING_BLOCKS.add(ModBlocks.YELLOW_MOQUETTE);
     });
     }
 }
