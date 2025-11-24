@@ -1,0 +1,81 @@
+package org.mrsquidson.block;
+
+
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+import org.mrsquidson.Moremoquettes;
+
+public class ModBlocks {
+
+    public static final RegistryKey<ItemGroup> BUILDING_BLOCKS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Moremoquettes.MOD_ID, "build_blocks"));
+    public static final ItemGroup BUILDING_BLOCKS = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(ModBlocks.YELLOW_MOQUETTE))
+            .displayName(Text.translatable("buildGroup.Moremoquettes"))
+            .build();
+
+    public static final Block BLACK_MOQUETTE = registerBlock("black_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block CYAN_MOQUETTE = registerBlock("cyan_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.CYAN_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block GRAY_MOQUETTE = registerBlock("gray_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.GRAY_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block GREEN_MOQUETTE = registerBlock("green_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.GREEN_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block LIGHT_BLUE_MOQUETTE = registerBlock("light_blue_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block LIGHT_GRAY_MOQUETTE = registerBlock("light_gray_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block LIME_MOQUETTE = registerBlock("lime_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.LIME_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block MAGENTA_MOQUETTE = registerBlock("magenta_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.MAGENTA_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block ORANGE_MOQUETTE = registerBlock("orange_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.ORANGE_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block PINK_MOQUETTE = registerBlock("pink_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.PINK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block PURPLE_MOQUETTE = registerBlock("purple_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.PURPLE_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block WHITE_MOQUETTE = registerBlock("white_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block YELLOW_MOQUETTE = registerBlock("yellow_moquette",
+            new Block(AbstractBlock.Settings.copy(Blocks.YELLOW_WOOL).strength(-1.0f,3600000.0f)));
+
+
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(Moremoquettes.MOD_ID,name), block);
+    }
+
+    private static void registerBlockItem(String name, Block block) {
+        Registry.register(Registries.ITEM, Identifier.of(Moremoquettes.MOD_ID, name),
+                new BlockItem(block, new Item.Settings()));
+    }
+
+    public static void registerModBlocks() {
+        Moremoquettes.LOGGER.info("Weaving carpets and making blocks for " + Moremoquettes.MOD_ID);
+    ItemGroupEvents.modifyEntriesEvent(ModBlocks.BUILDING_BLOCKS_KEY).register(itemGroup -> {
+        itemGroup.add(ModBlocks.BLACK_MOQUETTE);
+        itemGroup.add(ModBlocks.CYAN_MOQUETTE);
+        itemGroup.add(ModBlocks.GRAY_MOQUETTE);
+        itemGroup.add(ModBlocks.GREEN_MOQUETTE);
+        itemGroup.add(ModBlocks.LIGHT_BLUE_MOQUETTE);
+        itemGroup.add(ModBlocks.LIGHT_GRAY_MOQUETTE);
+        itemGroup.add(ModBlocks.LIME_MOQUETTE);
+        itemGroup.add(ModBlocks.MAGENTA_MOQUETTE);
+        itemGroup.add(ModBlocks.ORANGE_MOQUETTE);
+        itemGroup.add(ModBlocks.PINK_MOQUETTE);
+        itemGroup.add(ModBlocks.PURPLE_MOQUETTE);
+        itemGroup.add(ModBlocks.WHITE_MOQUETTE);
+        itemGroup.add(ModBlocks.YELLOW_MOQUETTE);
+    });
+    }
+}
