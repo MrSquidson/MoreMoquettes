@@ -2,14 +2,13 @@
 	"schemaVersion": 1,
 	"id": "moremoquettes",
 	"version": "${version}",
-	"name": "moremoquettes",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "TMM: More Moquettes!",
+	"description": "Adds more Moquette Variants based off doctor4t's Train Murder Mystery mod",
 	"authors": [
-		"Me!"
+		"MrSquidson / TheRealSquidMan"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/MrSquidson/MoreMoquettes"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/moremoquettes/icon.png",
