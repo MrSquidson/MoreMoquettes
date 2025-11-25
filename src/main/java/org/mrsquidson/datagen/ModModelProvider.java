@@ -14,19 +14,19 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CYAN_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GRAY_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GREEN_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_BLUE_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_GRAY_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIME_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGENTA_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ORANGE_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURPLE_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_MOQUETTE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_MOQUETTE);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.BLACK_MOQUETTE,ModBlocks.BLACK_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.CYAN_MOQUETTE,ModBlocks.CYAN_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.GRAY_MOQUETTE,ModBlocks.GRAY_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.GREEN_MOQUETTE,ModBlocks.GREEN_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.LIGHT_BLUE_MOQUETTE,ModBlocks.LIGHT_BLUE_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.LIGHT_GRAY_MOQUETTE,ModBlocks.LIGHT_GRAY_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.LIME_MOQUETTE,ModBlocks.LIME_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.MAGENTA_MOQUETTE,ModBlocks.MAGENTA_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.ORANGE_MOQUETTE,ModBlocks.ORANGE_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.PINK_MOQUETTE,ModBlocks.PINK_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.PURPLE_MOQUETTE,ModBlocks.PURPLE_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.WHITE_MOQUETTE,ModBlocks.WHITE_MOQUETTE_CARPET);
+        blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.YELLOW_MOQUETTE,ModBlocks.YELLOW_MOQUETTE_CARPET);
     }
 
     @Override

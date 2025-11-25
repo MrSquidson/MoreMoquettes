@@ -2,6 +2,7 @@ package org.mrsquidson;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import org.mrsquidson.datagen.ModLanguageProvider;
 import org.mrsquidson.datagen.ModModelProvider;
 
 public class MoremoquettesDataGenerator implements DataGeneratorEntrypoint {
@@ -10,6 +11,7 @@ public class MoremoquettesDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModLanguageProvider::new);
 
 	}
 }
