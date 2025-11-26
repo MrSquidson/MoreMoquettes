@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "moremoquettes:block/pink_moquette"
+  }
+}

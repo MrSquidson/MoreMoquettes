@@ -16,6 +16,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         // Menus Etc.
         translationBuilder.add(ModBlocks.BUILDING_BLOCKS_KEY, "TMM: More Moquettes!");
+        translationBuilder.add(ModBlocks.STRIPED_CARPET_KEY, "TMM: Striped Carpets!");
 
         // Full blocks
         translationBuilder.add(ModBlocks.BLACK_MOQUETTE, "Black Moquette");
@@ -46,5 +47,38 @@ public class ModLanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.PURPLE_MOQUETTE_CARPET, "Purple Moquette Carpet");
         translationBuilder.add(ModBlocks.WHITE_MOQUETTE_CARPET, "White Moquette Carpet");
         translationBuilder.add(ModBlocks.YELLOW_MOQUETTE_CARPET, "Yellow Moquette Carpet");
+
+        // Striped Carpets
+        // Blocks
+        translationBuilder.add(ModBlocks.BLACK_STRIPED_CARPET_BLOCK , "Black Striped Carpet Block");
+        translationBuilder.add(ModBlocks.BLUE_STRIPED_CARPET_BLOCK , "Blue Striped Carpet Block");
+        translationBuilder.add(ModBlocks.CYAN_STRIPED_CARPET_BLOCK , "Cyan Striped Carpet Block");
+        translationBuilder.add(ModBlocks.GRAY_STRIPED_CARPET_BLOCK , "Gray Striped Carpet Block");
+        translationBuilder.add(ModBlocks.GREEN_STRIPED_CARPET_BLOCK , "Green Striped Carpet Block");
+        translationBuilder.add(ModBlocks.LIGHT_BLUE_STRIPED_CARPET_BLOCK , "Light Blue Striped Carpet Block");
+        translationBuilder.add(ModBlocks.LIGHT_GRAY_STRIPED_CARPET_BLOCK , "Light Gray Striped Carpet Block");
+        translationBuilder.add(ModBlocks.LIME_STRIPED_CARPET_BLOCK , "Lime Striped Carpet Block");
+        translationBuilder.add(ModBlocks.ORANGE_STRIPED_CARPET_BLOCK , "Orange Striped Carpet Block");
+        translationBuilder.add(ModBlocks.PURPLE_STRIPED_CARPET_BLOCK , "Purple Striped Carpet Block");
+        translationBuilder.add(ModBlocks.WHITE_STRIPED_CARPET_BLOCK , "White Striped Carpet Block");
+        translationBuilder.add(ModBlocks.YELLOW_STRIPED_CARPET_BLOCK , "Yellow Striped Carpet Block");
+        translationBuilder.add(ModBlocks.RED_STRIPED_CARPET_BLOCK , "Red Striped Carpet Block");
+        translationBuilder.add(ModBlocks.BROWN_STRIPED_CARPET_BLOCK , "Brown Striped Carpet Block");
+
+        // Carpets
+        translationBuilder.add(ModBlocks.BLACK_STRIPED_CARPET,"Black Striped Carpet");
+        translationBuilder.add(ModBlocks.BLUE_STRIPED_CARPET,"Blue Striped Carpet");
+        translationBuilder.add(ModBlocks.CYAN_STRIPED_CARPET,"Cyan Striped Carpet");
+        translationBuilder.add(ModBlocks.GRAY_STRIPED_CARPET,"Gray Striped Carpet");
+        translationBuilder.add(ModBlocks.GREEN_STRIPED_CARPET,"Green Striped Carpet");
+        translationBuilder.add(ModBlocks.LIGHT_BLUE_STRIPED_CARPET,"Light Blue Striped Carpet");
+        translationBuilder.add(ModBlocks.LIGHT_GRAY_STRIPED_CARPET,"Light Gray Striped Carpet");
+        translationBuilder.add(ModBlocks.LIME_STRIPED_CARPET,"Lime Striped Carpet");
+        translationBuilder.add(ModBlocks.ORANGE_STRIPED_CARPET,"Orange Striped Carpet");
+        translationBuilder.add(ModBlocks.PURPLE_STRIPED_CARPET,"Purple Striped Carpet");
+        translationBuilder.add(ModBlocks.WHITE_STRIPED_CARPET,"White Striped Carpet");
+        translationBuilder.add(ModBlocks.YELLOW_STRIPED_CARPET,"Yellow Striped Carpet");
+        translationBuilder.add(ModBlocks.RED_STRIPED_CARPET,"Red Striped Carpet");
+        translationBuilder.add(ModBlocks.BROWN_STRIPED_CARPET,"Brown Striped Carpet");
     }
 }

@@ -17,14 +17,21 @@ import org.mrsquidson.Moremoquettes;
 
 public class ModBlocks {
 
-    // Creative Item Group
-    public static final RegistryKey<ItemGroup> BUILDING_BLOCKS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Moremoquettes.MOD_ID, "item_group"));
+    // Creative Item Group Moquettes
+    public static final RegistryKey<ItemGroup> BUILDING_BLOCKS_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Moremoquettes.MOD_ID, "moquette_group"));
     public static final ItemGroup BUILDING_BLOCKS = FabricItemGroup.builder()
             .icon(() -> new ItemStack(ModBlocks.YELLOW_MOQUETTE))
             .displayName(Text.translatable("buildGroup.Moquettes"))
             .build();
 
-    // "Normal Blocks"
+    // Creative Item Group Striped Carpets
+    public static final RegistryKey<ItemGroup> STRIPED_CARPET_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Moremoquettes.MOD_ID, "carpet_group"));
+    public static final ItemGroup STRIPED_CARPET = FabricItemGroup.builder()
+            .icon(() -> new ItemStack(ModBlocks.WHITE_STRIPED_CARPET_BLOCK))
+            .displayName(Text.translatable("buildGroup.Striped_Carpet"))
+            .build();
+
+    // Normal Moquette Blocks
     public static final Block BLACK_MOQUETTE = registerBlock("black_moquette",
             new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
     public static final Block CYAN_MOQUETTE = registerBlock("cyan_moquette",
@@ -80,6 +87,67 @@ public class ModBlocks {
     public static final Block YELLOW_MOQUETTE_CARPET = registerBlock("yellow_moquette_carpet",
             new CarpetBlock(AbstractBlock.Settings.copy(Blocks.YELLOW_CARPET).strength(-1.0f,3600000.0f)));
 
+    // Striped Carpets
+    public static final Block BLACK_STRIPED_CARPET_BLOCK = registerBlock("black_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block CYAN_STRIPED_CARPET_BLOCK = registerBlock("cyan_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block GRAY_STRIPED_CARPET_BLOCK = registerBlock("gray_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block GREEN_STRIPED_CARPET_BLOCK = registerBlock("green_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block LIGHT_BLUE_STRIPED_CARPET_BLOCK = registerBlock("light_blue_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block LIGHT_GRAY_STRIPED_CARPET_BLOCK = registerBlock("light_gray_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block LIME_STRIPED_CARPET_BLOCK = registerBlock("lime_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block ORANGE_STRIPED_CARPET_BLOCK = registerBlock("orange_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block PURPLE_STRIPED_CARPET_BLOCK = registerBlock("purple_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block WHITE_STRIPED_CARPET_BLOCK = registerBlock("white_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block YELLOW_STRIPED_CARPET_BLOCK = registerBlock("yellow_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block BLUE_STRIPED_CARPET_BLOCK = registerBlock("blue_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block RED_STRIPED_CARPET_BLOCK = registerBlock("red_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+    public static final Block BROWN_STRIPED_CARPET_BLOCK = registerBlock("brown_striped_carpet_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.BLACK_WOOL).strength(-1.0f,3600000.0f)));
+
+    // Striped Carpets
+    public static final Block BLACK_STRIPED_CARPET = registerBlock("black_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block CYAN_STRIPED_CARPET = registerBlock("cyan_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block GRAY_STRIPED_CARPET = registerBlock("gray_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block GREEN_STRIPED_CARPET = registerBlock("green_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block LIGHT_BLUE_STRIPED_CARPET = registerBlock("light_blue_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block LIGHT_GRAY_STRIPED_CARPET = registerBlock("light_gray_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block LIME_STRIPED_CARPET = registerBlock("lime_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block ORANGE_STRIPED_CARPET = registerBlock("orange_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block PURPLE_STRIPED_CARPET = registerBlock("purple_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block WHITE_STRIPED_CARPET = registerBlock("white_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block YELLOW_STRIPED_CARPET = registerBlock("yellow_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block BLUE_STRIPED_CARPET = registerBlock("blue_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block RED_STRIPED_CARPET = registerBlock("red_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+    public static final Block BROWN_STRIPED_CARPET = registerBlock("brown_striped_carpet",
+            new CarpetBlock(AbstractBlock.Settings.copy(Blocks.BLACK_CARPET).strength(-1.0f,3600000.0f)));
+
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Moremoquettes.MOD_ID,name), block);
@@ -94,9 +162,8 @@ public class ModBlocks {
         Moremoquettes.LOGGER.info("Weaving carpets and making blocks for " + Moremoquettes.MOD_ID);
 
         Registry.register(Registries.ITEM_GROUP, BUILDING_BLOCKS_KEY, BUILDING_BLOCKS);
-
         ItemGroupEvents.modifyEntriesEvent(ModBlocks.BUILDING_BLOCKS_KEY).register(BUILDING_BLOCKS -> {
-            // Normal Blocks
+            // Normal Moquette Blocks
             BUILDING_BLOCKS.add(ModBlocks.BLACK_MOQUETTE);
             BUILDING_BLOCKS.add(ModBlocks.CYAN_MOQUETTE);
             BUILDING_BLOCKS.add(ModBlocks.GRAY_MOQUETTE);
@@ -125,6 +192,42 @@ public class ModBlocks {
             BUILDING_BLOCKS.add(ModBlocks.PURPLE_MOQUETTE_CARPET);
             BUILDING_BLOCKS.add(ModBlocks.WHITE_MOQUETTE_CARPET);
             BUILDING_BLOCKS.add(ModBlocks.YELLOW_MOQUETTE_CARPET);
-    });
+        });
+
+        Registry.register(Registries.ITEM_GROUP, STRIPED_CARPET_KEY, STRIPED_CARPET);
+        ItemGroupEvents.modifyEntriesEvent(ModBlocks.STRIPED_CARPET_KEY).register(STRIPED_CARPET -> {
+            // Striped Carpets
+            // Blocks
+            STRIPED_CARPET.add(ModBlocks.BLACK_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.BLUE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.CYAN_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.GRAY_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.GREEN_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.LIGHT_BLUE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.LIGHT_GRAY_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.LIME_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.ORANGE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.PURPLE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.WHITE_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.YELLOW_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.RED_STRIPED_CARPET_BLOCK);
+            STRIPED_CARPET.add(ModBlocks.BROWN_STRIPED_CARPET_BLOCK);
+
+            // Carpets
+            STRIPED_CARPET.add(ModBlocks.BLACK_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.CYAN_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.GRAY_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.GREEN_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.LIGHT_BLUE_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.LIGHT_GRAY_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.LIME_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.ORANGE_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.PURPLE_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.WHITE_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.YELLOW_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.BLUE_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.RED_STRIPED_CARPET);
+            STRIPED_CARPET.add(ModBlocks.BROWN_STRIPED_CARPET);
+        });
     }
 }
