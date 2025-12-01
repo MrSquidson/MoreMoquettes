@@ -2,16 +2,18 @@
 	"schemaVersion": 1,
 	"id": "moremoquettes",
 	"version": "${version}",
-	"name": "TMM: More Moquettes!",
-	"description": "Adds more Moquette Variants based off doctor4t's Train Murder Mystery mod",
-	"authors": [
-		"MrSquidson / TheRealSquidMan"
-	],
+	"name": "More Moquettes!",
+	"description": "Adds more Moquette Variants inspired by doctor4t's Train Murder Mystery mod",
+	"contributors": [
+		"Code: TheRealSquidMan", "Textures: miss_nora_", "Textures: lncante", "Textures: Horror_Show", "Textures: Spooks"],
+
 	"contact": {
-		"sources": "https://github.com/MrSquidson/MoreMoquettes"
+		"homepage": "https://modrinth.com/mod/moremoquettes",
+		"sources": "https://github.com/MrSquidson/MoreMoquettes",
+		"issues": "https://github.com/MrSquidson/MoreMoquettes/issues"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/moremoquettes/icon.png",
+	"license": "Apache 2.0",
+	"icon": "assets/moremoquettes/textures/block/yellow_moquette.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -21,9 +23,6 @@
 			"org.mrsquidson.MoremoquettesDataGenerator"
 		]
 	},
-	"mixins": [
-		"moremoquettes.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.18.1",
 		"minecraft": "~1.21.1",
