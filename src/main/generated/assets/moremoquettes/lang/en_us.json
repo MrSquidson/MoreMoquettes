@@ -11,6 +11,7 @@
   "block.moremoquettes.cyan_moquette_carpet": "Cyan Moquette Carpet",
   "block.moremoquettes.cyan_striped_carpet": "Cyan Striped Carpet",
   "block.moremoquettes.cyan_striped_carpet_block": "Cyan Striped Carpet Block",
+  "block.moremoquettes.dark_marble_tile": "Dark Marble Tiles",
   "block.moremoquettes.gray_moquette": "Gray Moquette",
   "block.moremoquettes.gray_moquette_carpet": "Gray Moquette Carpet",
   "block.moremoquettes.gray_striped_carpet": "Gray Striped Carpet",
@@ -21,8 +22,6 @@
   "block.moremoquettes.green_striped_carpet_block": "Green Striped Carpet Block",
   "block.moremoquettes.light_blue_moquette": "Light Blue Moquette",
   "block.moremoquettes.light_blue_moquette_carpet": "Light Blue Moquette Carpet",
-  "block.moremoquettes.light_blue_striped_carpet": "Light Blue Striped Carpet",
-  "block.moremoquettes.light_blue_striped_carpet_block": "Light Blue Striped Carpet Block",
   "block.moremoquettes.light_gray_moquette": "Light Gray Moquette",
   "block.moremoquettes.light_gray_moquette_carpet": "Light Gray Moquette Carpet",
   "block.moremoquettes.light_gray_striped_carpet": "Light Gray Striped Carpet",
@@ -53,6 +52,6 @@
   "block.moremoquettes.yellow_moquette_carpet": "Yellow Moquette Carpet",
   "block.moremoquettes.yellow_striped_carpet": "Yellow Striped Carpet",
   "block.moremoquettes.yellow_striped_carpet_block": "Yellow Striped Carpet Block",
-  "buildGroup.Moquettes": "TMM: More Moquettes!",
-  "buildGroup.Striped_Carpet": "TMM: Striped Carpets!"
+  "buildGroup.Moquettes": "More Moquettes!",
+  "buildGroup.Striped_Carpet": "MM!: Striped Carpets!"
 }

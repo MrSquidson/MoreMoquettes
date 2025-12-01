@@ -44,6 +44,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.YELLOW_STRIPED_CARPET_BLOCK,ModBlocks.YELLOW_STRIPED_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.BROWN_STRIPED_CARPET_BLOCK,ModBlocks.BROWN_STRIPED_CARPET);
         blockStateModelGenerator.registerWoolAndCarpet(ModBlocks.RED_STRIPED_CARPET_BLOCK,ModBlocks.RED_STRIPED_CARPET);
+
+        // Dark Marble
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARK_MARBLE_TILE);
+
     }
 
     @Override
